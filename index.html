@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Desafio Countdown</title>
+</head>
+
+<body>
+  <main>
+    <div class="countdown-container">
+      <div class="countdown-content">
+        <h1>READY TO LAUNCH IN...</h1>
+        <div class="countdown">
+          <div class="dias">
+            <span>Dias</span>
+            <h2 id="dias">00</h2>
+          </div>
+          <h2>:</h2>
+          <div class="horas">
+            <span>Horas</span>
+            <h2 id="horas">00</h2>
+          </div>
+          <h2>:</h2>
+          <div class="minutos">
+            <span>Minutos</span>
+            <h2 id="minutos">00</h2>
+          </div>
+          <h2>:</h2>
+          <div class="segundos">
+            <span>Segundos</span>
+            <h2 id="segundos">00</h2>
+          </div>
+        </div>
+
+      </div>
+      <div class="countdown-cta">
+        <span>Inscreva-se para saber mais sobre o lançamento</span>
+        <button type="button" id="subscribe">Inscreva-se</button>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="./assets/rocket.svg" alt="Imagem de um foguete">
+    </div>
+  </main>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <header>
+        <div class="header">
+          <h1 class="modal-title">Finalize sua inscrição no evento</h1>
+          <span class="close">&times;</span>
+        </div>
+        <div class="divider"></div>
+      </header>
+      <div class="description">
+        <span>Preencha os campos abaixo corretamente e clique no botão para se inscrever.</span>
+      </div>
+      <form>
+        <div class="nome">
+          <img src="./assets/user.svg" alt="Ícone de usuário">
+          <input type="text" name="name" id="name" placeholder="Nome" aria-placeholder="Digite seu nome">
+        </div>
+        <div class="email">
+          <img src="./assets/email.svg" alt="Ícone de e-mail">
+          <input type="email" name="email" id="email" placeholder="E-mail" aria-placeholder="Digite seu e-mail">
+        </div>
+        <button type="submit">Quero me inscrever</button>
+      </form>
+    </div>
+  </div>
+  <img class="top-image" src="./assets/top-image.svg" alt="Image de topo">
+  <img class="bottom-image" src="./assets/bottom-image.svg" alt="Imagem de rodapé">
+  <script src="scripts.js"></script>
+</body>
+
+</html>
