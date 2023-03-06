@@ -1,4 +1,4 @@
-var eventData = new Date('Mar 02, 2023 18:52:30').getTime();
+var eventData = new Date('Nov 14, 2023 09:00:00').getTime();
 
 var x = setInterval(() => {
   var now = new Date().getTime();
